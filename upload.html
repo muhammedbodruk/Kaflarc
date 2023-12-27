@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #222831;
+            color: #ffffff;
+        }
+
+        a {
+            color: #ffffff;
+        }
+
+        .header {
+            background-color: #393E46;
+        }
+
+        .button {
+            background-color: #00ADB5;
+            color: #ffffff;
+        }
+
+        .form {
+            background-color: #0A2647;
+            border-color: #ffffff;
+        }
+
+        .form input {
+            background-color: #0D7377;
+            color: #ffffff;
+        }
+
+        .footer {
+            background-color: #112D4E;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header text-center py-3">
+        <h1><a href="index.html" style="color: #ffffff; text-decoration: none;">Kerem Aydınlar Fen Lisesi Arşivi</a>
+        </h1>
+    </div>
+    <div class="container mt-5">
+        <form class="form" action="upload.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="proje_ad">Projenizin adını giriniz:</label><br>
+                <input type="text" class="form-control" id="proje_ad" name="proje_ad"><br>
+            </div>
+            <div class="form-group">
+                <label for="og_ad">adınız ve soyad:</label><br>
+                <input type="text" class="form-control" id="og_ad" name="og_ad"><br>
+            </div>
+            <div class="form-group">
+                <label for="og_numara">öğrenci numaranız:</label><br>
+                <input type="text" class="form-control" id="og_numara" name="og_numara"><br>
+            </div>
+            <div class="form-group">
+                <label for="sinif">sınıfınız:</label><br>
+                <input type="text" class="form-control" id="sinif" name="sinif"><br>
+            </div>
+            <div class="form-group">
+                <label for="file">Dosya Seçin:</label>
+                <input type="file" class="form-control" name="file" id="file">
+            </div>
+            <div class="form-group mt-5">
+                <button type="submit" class="btn btn-lg button">Yükle</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer text-center py-3">
+        <p>
+            Copyright © 2023 Kerem Aydınlar Fen Lisesi |
+            <a href="http://mhbdfilm.tk" target="_blank">mhbdfilm.tk</a> |
+            Destek: <a href="mailto:muhammedbodruk2@gmail.com">muhammedbodruk2@gmail.com</a> |
+            <a href="mailto:yilmazazizenes7@gmail.com">yilmazazizenes7@gmail.com</a> |
+            Muhammed Bodruk: <a href="tel:5519575383">5519575383</a> |
+            Aziz Enes Yılmaz: <a href="tel:5578496056">5578496056</a>
+        </p>
+    </div>
+
+</body>
+
+</html>
